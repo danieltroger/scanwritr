@@ -4,10 +4,10 @@
 <script>
 var img= new Image()
 img.src="image.jpg";
-img.style.width="100%";
+img.style.width="210mm";
 img.style.position="absolute";
-img.style.left="100px";
-img.style.top="140px";
+img.style.left="0";
+img.style.top="0";
 document.body.appendChild(img);
 document.body.addEventListener("click",addbox);
 function addbox(e)
@@ -24,8 +24,11 @@ else
 if(e.target.tagName != "TEXTAREA")
 {
 var area=document.createElement("textarea");
+area.style.top=window.scrollY+e.clientY+"px";
+area.style.left=window.scrollX+e.clientX+"px";
+/*
 area.style.top=(window.scrollY+(e.clientY-140))+"px";
-area.style.left=(window.scrollX+(e.clientX-100))+"px";
+area.style.left=(window.scrollX+(e.clientX-100))+"px";*/
 area.style.position="absolute";
 area.style.border="none";
 area.style.fontFamily="helvetica";

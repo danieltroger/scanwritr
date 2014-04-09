@@ -4,10 +4,10 @@
 <script>
 var img= new Image()
 img.src="image.jpg";
-img.style.width="100%";
+img.style.width="210mm";
 img.style.position="absolute";
-img.style.left="100px";
-img.style.top="140px";
+img.style.left="0";
+img.style.top="0";
 document.body.appendChild(img);
 document.body.addEventListener("click",addbox);
 function addbox(e)
@@ -34,6 +34,7 @@ area.style.border="none";
 area.style.fontFamily="helvetica";
 area.style.zIndex=5;
 area.style.fontSize="17pt";
+area.style.background="none repeat scroll 0 0 rgba(222, 222, 222, 0.2)";
 document.body.appendChild(area);
 }
 }
