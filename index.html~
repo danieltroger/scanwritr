@@ -9,7 +9,27 @@ document.body.appendChild(img);
 document.body.addEventListener("click",addbox);
 function addbox(e)
 {
-console.log(e);
+if(e.shiftKey)
+{
+if(e.target.tagName == "TEXTAREA")
+{
+e.target.remove();
+}
+}
+else
+{
+if(e.target.tagName != "TEXTAREA")
+{
+var area=document.createElement("textarea");
+area.style.top=window.scrollY+e.clientY+"px";
+area.style.left=window.scrollX+e.clientX+"px";
+area.style.position="absolute";
+area.style.border="none";
+area.style.fontFamily="helvetica";
+area.style.zIndex=5;
+document.body.appendChild(area);
+}
+}
 }
 </script>
 </body>
