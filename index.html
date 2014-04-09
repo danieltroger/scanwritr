@@ -24,8 +24,8 @@ else
 if(e.target.tagName != "TEXTAREA")
 {
 var area=document.createElement("textarea");
-area.style.top=(window.scrollY+(e.clientY-120))+"px";
-area.style.left=(window.scrollX+(e.clientX-90))+"px";
+area.style.top=(window.scrollY+(e.clientY-90))+"px";
+area.style.left=(window.scrollX+(e.clientX-80))+"px";
 /*
 area.style.top=window.scrollY+e.clientY+"px";
 area.style.left=window.scrollX+e.clientX+"px";
@@ -37,6 +37,7 @@ area.style.zIndex=5;
 area.style.fontSize="17pt";
 area.style.background="none repeat scroll 0 0 rgba(222, 222, 222, 0.2)";
 document.body.appendChild(area);
+area.focus();
 }
 }
 }
