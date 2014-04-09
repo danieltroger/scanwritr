@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body>
-<img src="image.jpg" style="width:100%" />
+<script>
+var img= new Image()
+img.src="image.jpg";
+img.style.width="100%";
+document.body.appendChild(img);
+document.body.addEventListener("click",addbox);
+function addbox(e)
+{
+console.log(e);
+}
+</script>
 </body>
 </html>
