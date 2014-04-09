@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-<img src="image.jpg" />
+<img src="image.jpg" style="width:100%" />
 </body>
 </html>
